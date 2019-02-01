@@ -1,18 +1,19 @@
 node {
-    stage 'Checkout from SCM'{
+			
+    stage 'Checkout from SCM'
     checkout scm
-	}
     
-	stage 'Build' {
+	stage 'Build'
 		echo "In Build Stage ..."
-    } 
+    
 
-	stage 'Publish' {
+	stage 'Publish' 
 		echo "Publishing ..."
-	}
 	
-	stage 'Deployment'{
+	
+	stage 'Deployment'
 		echo "Deploying  ..."
-	}	
+	
+  		
 }
 
