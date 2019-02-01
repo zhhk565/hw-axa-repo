@@ -3,20 +3,12 @@ node {
     checkout scm
 
     stage 'Build'
+		echo "In Build Stage ..."
+  
 
-    try {
-	echo "In Build Stage ..."
-        
-    } catch (e) {
-        //sh e.toString()
-        //throw e
+	stage 'Publish'
+		echo "Publishing ..."
+
+	stage 'Deployment'
+		echo "Deploying  ..."
     }
-
-   stage 'Publish'
-	echo "Publishing ..."
-
-  stage 'Deployment'
-	echo "Deploying  ..."
-    }
-}
-
