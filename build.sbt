@@ -44,7 +44,8 @@ val root = (project in file("."))
 
     // Credential available when running job in Jenkins
    // credentials += Credentials(Path.userHome / ".ivy2" / ".credentials-new-nexus"),
-    credentials += Credentials("/root/zk/jk.credentials-new-nexus"),
+//    credentials += Credentials("/root/zk/jk.credentials-new-nexus"),
+    credentials += Credentials("Some Nexus Repository Manager", "hdp-master.com:8081", "admin", "admin123"),
 
    
     // Specifies JVM memory options (will be used when forking)
