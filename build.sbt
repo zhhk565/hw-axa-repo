@@ -37,8 +37,10 @@ val root = (project in file("."))
       val nexusRepositoriesUrl = "http://hdp-master.com:8081/content/repositories"
 
       if (isSnapshot.value)
-        Some("Snapshots" at s"$nexusRepositoriesUrl/apache-snapshots")
-      else
+//        Some("Snapshots" at s"$nexusRepositoriesUrl/apache-snapshots")
+        Some("Snapshots" at s"$nexusRepositoriesUrl/HW/")
+
+        else
         Some("Releases" at s"$nexusRepositoriesUrl/releases")
     },
 
